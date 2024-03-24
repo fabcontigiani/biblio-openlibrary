@@ -1,0 +1,34 @@
+#+title: biblio-openlibrary - An OpenLibrary backend for biblio.el
+
+~biblio-openlibrary~ provides a back-end for [[https://github.com/cpitclaudel/biblio.el][biblio.el]] that allows you to search
+and retrieve bibliographic entries using [[https://openlibrary.org/][OpenLibrary]]'s [[https://openlibrary.org/dev/docs/api/read][Read API]].
+
+* Motivation
+[[https://github.com/cpitclaudel/biblio.el][biblio.el]] is a great package that allows for the retrieval of bibliographic
+entries from many sources, but it lacks the ability of querying based on ISBN,
+this package aims at providing a solution for this.
+
+** Scope
+ [[https://openlibrary.org/][OpenLibrary]]'s [[https://openlibrary.org/dev/docs/api/read][Read API]] allows for queries based on a multitude of identifiers,
+ not only ISBN. Currently, *this package only allows, and expects, queries based on
+ an ISBN identifier*, mainly due to ~biblio.el~ already providing functionality for
+ the other, most common, use cases.
+ 
+* Installation
+Using ~package.el~, ~use-package~ and [[https://github.com/slotThe/vc-use-package][~vc-use-package~]]:
+#+begin_src emacs-lisp 
+(use-package biblio-openlibrary
+  :vc (:fetcher github :repo fabcontigiani/biblio-openlibrary)
+  :after biblio)
+#+end_src
+
+Using ~package-vc~: src_elisp{M-: (package-vc-install "https://github.com/fabcontigiani/biblio-openlibrary") }
+
+Manually: 
+#+begin_src emacs-lisp 
+(use-package biblio-openlibrary
+  :load-path "/path/to/repo"
+  :after biblio)
+#+end_src
+
+* Usage
