@@ -1,4 +1,5 @@
-#+title: biblio-openlibrary - An OpenLibrary backend for biblio.el
+#+title: biblio-openlibrary
+#+subtitle:  An OpenLibrary backend for biblio.el
 
 ~biblio-openlibrary~ provides a back-end for [[https://github.com/cpitclaudel/biblio.el][biblio.el]] that allows you to search
 and retrieve bibliographic entries using [[https://openlibrary.org/][OpenLibrary]]'s [[https://openlibrary.org/dev/docs/api/read][Read API]].
@@ -10,21 +11,24 @@ this package aims at providing a solution for this.
 
 ** Scope
  [[https://openlibrary.org/][OpenLibrary]]'s [[https://openlibrary.org/dev/docs/api/read][Read API]] allows for queries based on a multitude of identifiers,
- not only ISBN. Currently, *this package only allows, and expects, queries based on
+ not only ISBN. /Currently/, *this package only allows, and expects, queries based on
  an ISBN identifier*, mainly due to ~biblio.el~ already providing functionality for
  the other, most common, use cases.
  
 * Installation
-Using ~package.el~, ~use-package~ and [[https://github.com/slotThe/vc-use-package][~vc-use-package~]]:
+Using ~package.el~ and [[https://github.com/slotThe/vc-use-package][~vc-use-package~]]:
 #+begin_src emacs-lisp 
 (use-package biblio-openlibrary
   :vc (:fetcher github :repo fabcontigiani/biblio-openlibrary)
   :after biblio)
 #+end_src
 
-Using ~package-vc~: src_elisp{M-: (package-vc-install "https://github.com/fabcontigiani/biblio-openlibrary") }
+Using ~package-vc~, execute:
+#+begin_src emacs-lisp
+(package-vc-install "https://github.com/fabcontigiani/biblio-openlibrary")
+#+end_src
 
-Manually: 
+Manually, after cloning the repository: 
 #+begin_src emacs-lisp 
 (use-package biblio-openlibrary
   :load-path "/path/to/repo"
