@@ -98,5 +98,14 @@ COMMAND, ARG, MORE: See `biblio-backends'."
 ;;;###autoload
 (add-hook 'biblio-init-hook #'biblio-openlibrary-backend)
 
+;;;###autoload
+(defun biblio-openlibrary-lookup (&optional query)
+  "Start an OpenLibrary search for QUERY, prompting if needed."
+  (interactive)
+  (biblio-lookup #'biblio-openlibrary-backend query))
+
+;;;###autoload
+(defalias 'openlibrary-lookup 'biblio-openlibrary-lookup)
+
 (provide 'biblio-openlibrary)
 ;;; biblio-openlibrary.el ends here
