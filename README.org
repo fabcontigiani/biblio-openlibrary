@@ -6,7 +6,7 @@ and retrieve bibliographic entries by ISBN using [[https://openlibrary.org/][Ope
 * Motivation
 [[https://github.com/cpitclaudel/biblio.el][biblio.el]] is a great package that allows for the retrieval of bibliographic
 entries from many sources. However, it does not support queries based on ISBN.
-This package aims to providing a solution for this.
+This package aims to provide a solution for this.
 
 ** Scope
  [[https://openlibrary.org/][OpenLibrary]]'s [[https://openlibrary.org/dev/docs/api/read][Read API]] allows for queries based on a multitude of identifiers,
