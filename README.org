@@ -35,5 +35,5 @@ Manually, after cloning the repository:
 #+end_src
 
 * Usage
-Perform a ~M-x biblio-lookup~, and select the new option =OpenLibrary=, then
-provide an ISBN identifier to query.
+Perform a ~M-x biblio-lookup~ and select the new option =OpenLibrary=, or do an =M-x
+openlibrary-lookup=, then provide an ISBN identifier to query.
