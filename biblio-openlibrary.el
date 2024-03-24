@@ -100,7 +100,7 @@ COMMAND, ARG, MORE: See `biblio-backends'."
 
 ;;;###autoload
 (defun biblio-openlibrary-lookup (&optional query)
-  "Start a OpenLibrary search for QUERY, prompting if needed."
+  "Start an OpenLibrary search for QUERY, prompting if needed."
   (interactive)
   (biblio-lookup #'biblio-openlibrary-backend query))
 
