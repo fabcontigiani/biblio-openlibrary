@@ -1,4 +1,6 @@
-#+title: biblio-openlibrary | An OpenLibrary backend for biblio.el
+#+title: 📚 biblio-openlibrary
+
+** An OpenLibrary backend for biblio.el
 
 ~biblio-openlibrary~ provides a backend for [[https://github.com/cpitclaudel/biblio.el][biblio.el]], which allows you to easily search
 and retrieve bibliographic entries by ISBN using [[https://openlibrary.org/][OpenLibrary]]'s [[https://openlibrary.org/dev/docs/api/read][Read API]].
@@ -35,5 +37,6 @@ Manually, after cloning the repository:
 #+end_src
 
 * Usage
-Perform a ~M-x biblio-lookup~ and select the new option =OpenLibrary=, or do an =M-x
-openlibrary-lookup=, then provide an ISBN identifier to query.
+- ~M-x biblio-lookup~ and select the new option =OpenLibrary=
+  - or ~M-x openlibrary-lookup~
+- Enter ISBN
